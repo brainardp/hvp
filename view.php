@@ -49,7 +49,10 @@ $view->validatecontent();
 $PAGE->set_url(new \moodle_url('/mod/hvp/view.php', array('id' => $id)));
 $PAGE->set_title(format_string($content['title']));
 $PAGE->set_heading($course->fullname);
-
+// xAPI (ADL) js wrapper.
+$PAGE->requires->js(new moodle_url($CFG->httpswwwroot . '/mod/hvp/xapi-jswrapper/dist/xapiwrapper.min.js'), true);
+$PAGE->requires->jquery();
+$PAGE->requires->js(new moodle_url($CFG->httpswwwroot . '/mod/hvp/js/xapi-stmt-dispatcher.js'), true);
 // Add H5P assets to page.
 $view->addassetstopage();
 $view->logviewed();
