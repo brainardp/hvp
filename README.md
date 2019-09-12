@@ -1,4 +1,4 @@
-# H5P Moodle Plugin
+# H5P Moodle Plugin - with Patrick Muckabout
 
 This is the 1.0-rc version of the H5P plugin for Moodle. That means that this
 version is feature complete but you might encounter bugs or issues that will
